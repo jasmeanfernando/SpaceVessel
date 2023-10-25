@@ -293,7 +293,7 @@ class Ship:
             k = self.has_open_neighbors_on_fire(self.grid[x][y - 1])
             self.grid[x][y - 1].change_flammability(self.q, k)
             self.opened_cells_near_fire.append(self.grid[x][y - 1])
-    
+
     # Advance Fire Method
     def advance_fire(self):
         """
